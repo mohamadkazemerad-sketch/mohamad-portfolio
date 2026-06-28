@@ -1,0 +1,3895 @@
+/* ===== RESET ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+
+  background:
+  radial-gradient(circle at top, rgba(56,189,248,.15), transparent 35%),
+  #050816;
+
+  color: white;
+
+  font-family: Tahoma, sans-serif;
+
+  direction: rtl;
+
+  overflow-x: hidden;
+}
+
+
+
+/* ===== NAVBAR ===== */
+
+
+nav {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  height: 58px;
+
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+
+  gap:30px;
+
+
+  background:rgba(5,8,22,.65);
+
+  backdrop-filter:blur(15px);
+
+
+  border-bottom:1px solid rgba(56,189,248,.2);
+
+
+  z-index:1000;
+
+}
+
+
+
+nav h2 {
+
+  color:#38bdf8;
+
+  font-size:30px;
+
+  letter-spacing:5px;
+
+
+}
+
+
+
+.menu {
+
+  display:flex;
+
+  gap:30px;
+
+}
+
+
+
+.menu a {
+
+
+  color:#cbd5e1;
+
+  text-decoration:none;
+
+  font-size:17px;
+
+
+  transition:.3s;
+
+}
+
+
+
+.menu a:hover {
+
+ color:#38bdf8;
+
+ transform:translateY(-3px);
+
+}
+
+
+
+
+/* ===== SECTIONS ===== */
+
+
+section {
+
+ min-height:auto;
+
+ display:flex;
+
+ flex-direction:column;
+
+ justify-content:center;
+
+ align-items:center;
+
+ padding:95px 20px;
+
+}
+
+
+
+
+/* ===== HERO ===== */
+
+
+.hero {
+
+ text-align:center;
+
+ position:relative;
+
+}
+
+
+
+.hero h1 {
+
+ font-size:60px;
+
+ margin-top:30px;
+
+}
+
+
+
+.hero h2 {
+
+ margin-top:15px;
+
+ font-size:35px;
+
+ color:#38bdf8;
+
+}
+
+
+
+.hero p {
+
+ margin-top:20px;
+
+ max-width:600px;
+
+ color:#cbd5e1;
+
+ font-size:20px;
+
+ line-height:2;
+
+}
+/* ===== ORBIT HERO ===== */
+
+
+.hero-content {
+
+  position:relative;
+
+  width:260px;
+
+  height:260px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  margin-bottom:40px;
+
+}
+
+
+
+/* خورشید وسط */
+
+
+.logo-box {
+
+
+  width:130px;
+
+  height:130px;
+
+
+  border-radius:50%;
+
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+
+  background:
+
+  radial-gradient(circle,
+
+  #38bdf8,
+
+  rgba(56,189,248,.2));
+
+
+  border:2px solid #38bdf8;
+
+
+  box-shadow:
+
+  0 0 40px #38bdf8;
+
+
+  animation:pulse 3s infinite;
+
+
+  z-index:5;
+
+
+}
+
+
+
+.logo-box span {
+
+
+ font-size:45px;
+
+ font-weight:bold;
+
+ letter-spacing:5px;
+
+
+}
+
+
+
+/* سیاره ها */
+
+
+.side-card {
+
+
+ position:absolute;
+
+
+ width:85px;
+
+ height:45px;
+
+
+ display:flex;
+
+ justify-content:center;
+
+ align-items:center;
+
+
+ border-radius:25px;
+
+
+ background:rgba(255,255,255,.08);
+
+
+ border:1px solid rgba(56,189,248,.5);
+
+
+ backdrop-filter:blur(10px);
+
+
+ color:#cbd5e1;
+
+
+}
+
+@keyframes pulse {
+
+
+ 50% {
+
+ transform:scale(1.08);
+
+ }
+
+
+}
+/* ===== HERO BUTTONS ===== */
+
+
+.hero-buttons {
+
+ display:flex;
+
+ gap:20px;
+
+ justify-content:center;
+
+ margin-top:35px;
+
+ flex-wrap:wrap;
+
+}
+
+
+
+.hero-btn {
+
+
+ padding:14px 35px;
+
+
+ border-radius:35px;
+
+
+ background:linear-gradient(
+
+ 135deg,
+
+ #38bdf8,
+
+ #0ea5e9
+
+ );
+
+
+ color:#050816;
+
+
+ text-decoration:none;
+
+
+ font-weight:bold;
+
+
+ font-size:17px;
+
+
+ transition:.3s;
+
+
+ box-shadow:
+
+ 0 10px 30px rgba(56,189,248,.25);
+
+
+}
+
+
+
+.hero-btn:hover {
+
+
+ transform:translateY(-5px);
+
+
+ box-shadow:
+
+ 0 15px 40px rgba(56,189,248,.45);
+
+
+}
+
+
+
+
+
+/* ===== SKILLS ===== */
+
+
+.skills h2,
+
+.projects h2,
+
+.contact h2 {
+
+
+ color:#38bdf8;
+
+ font-size:40px;
+
+ margin-bottom:40px;
+
+
+}
+
+
+
+.skill-list {
+
+
+ display:flex;
+
+
+ gap:25px;
+
+
+ justify-content:center;
+
+
+ flex-wrap:wrap;
+
+
+}
+
+
+
+.skill-card {
+
+
+ width:180px;
+
+
+ height:120px;
+
+
+ display:flex;
+
+
+ justify-content:center;
+
+
+ align-items:center;
+
+
+ background:rgba(255,255,255,.07);
+
+
+ border:1px solid rgba(56,189,248,.4);
+
+
+ border-radius:25px;
+
+
+ backdrop-filter:blur(10px);
+
+
+ font-size:25px;
+
+
+ transition:.3s;
+
+
+}
+
+
+
+.skill-card:hover {
+
+
+ transform:translateY(-10px);
+
+
+ border-color:#38bdf8;
+
+
+}
+
+
+
+
+/* ===== PROJECT ===== */
+
+
+.project-list {
+
+
+ display:flex;
+
+
+ gap:30px;
+
+
+ flex-wrap:wrap;
+
+
+ justify-content:center;
+
+
+}
+
+
+
+.project-card {
+
+
+ width:300px;
+
+
+ padding:30px;
+
+
+ border-radius:25px;
+
+
+ background:rgba(255,255,255,.07);
+
+
+ border:1px solid rgba(56,189,248,.4);
+
+
+ backdrop-filter:blur(10px);
+
+
+ text-align:center;
+
+
+}
+
+
+
+
+.project-card a {
+
+
+ display:inline-block;
+
+
+ margin-top:20px;
+
+
+ padding:10px 25px;
+
+
+ background:#38bdf8;
+
+
+ color:#050816;
+
+
+ border-radius:25px;
+
+
+ text-decoration:none;
+
+
+ font-weight:bold;
+
+
+}
+
+
+
+
+
+/* ===== MOBILE ===== */
+
+
+
+@media(max-width:768px){
+
+
+nav {
+
+
+ height:58px;
+
+
+ padding:0 25pxpx;
+
+
+ gap:30px;
+
+
+ flex-direction:column;
+
+
+}
+
+
+
+.menu {
+
+
+ gap:15px;
+
+
+}
+
+
+
+.menu a {
+
+
+ font-size:14px;
+
+
+}
+
+
+
+.hero h1 {
+
+
+ font-size:34px;
+
+
+}
+
+
+
+.hero h2 {
+
+
+ font-size:24px;
+
+
+}
+
+
+
+.hero p {
+
+
+ font-size:16px;
+
+
+}
+
+
+
+.hero-content {
+
+
+ width:240px;
+
+
+ height:240px;
+
+
+}
+
+
+
+.logo-box {
+
+
+ width:100px;
+
+
+ height:100px;
+
+
+}
+
+
+
+.logo-box span {
+
+
+ font-size:32px;
+
+
+}
+
+
+
+.side-card {
+
+
+ width:70px;
+
+
+ height:35px;
+
+
+ font-size:12px;
+
+
+}
+
+
+
+
+.skill-list,
+
+
+.project-list {
+
+
+ flex-direction:column;
+
+
+ align-items:center;
+
+
+}
+
+
+
+.skill-card {
+
+
+ width:260px;
+
+
+}
+
+
+.project-card {
+
+
+ width:90%;
+
+
+}
+
+
+
+.hero-buttons {
+
+
+ flex-direction:column;
+
+
+ width:100%;
+
+
+}
+
+
+
+.hero-btn {
+
+
+ width:220px;
+
+
+ text-align:center;
+
+
+}
+
+
+
+}
+/* ===== CONTACT ===== */
+
+
+.contact p {
+
+  color:#cbd5e1;
+
+  font-size:20px;
+
+  margin-bottom:30px;
+
+  padding:20px 35px;
+
+  background:rgba(255,255,255,.07);
+
+  border:1px solid rgba(56,189,248,.3);
+
+  border-radius:25px;
+
+  backdrop-filter:blur(10px);
+
+}
+
+
+
+.contact-buttons {
+
+ display:flex;
+
+ gap:20px;
+
+ justify-content:center;
+
+ flex-wrap:wrap;
+
+}
+
+
+
+.contact-btn {
+
+
+ padding:14px 35px;
+
+
+ border-radius:35px;
+
+
+ background:#38bdf8;
+
+
+ color:#050816;
+
+
+ text-decoration:none;
+
+
+ font-weight:bold;
+
+
+ transition:.3s;
+
+
+}
+
+
+
+.contact-btn:hover {
+
+
+ transform:translateY(-5px);
+
+
+ box-shadow:0 10px 30px rgba(56,189,248,.35);
+
+
+}
+
+
+
+/* ===== FOOTER ===== */
+
+
+.footer {
+
+
+ width:100%;
+
+
+ padding:30px;
+
+
+ text-align:center;
+
+
+ color:#cbd5e1;
+
+
+ border-top:1px solid rgba(56,189,248,.2);
+
+
+}
+
+
+
+.footer span {
+
+
+ color:#38bdf8;
+
+
+}
+
+
+
+
+
+/* ===== SMALL EFFECTS ===== */
+
+
+
+.hero,
+.about,
+.skills,
+.projects,
+.contact,
+.footer {
+
+
+ animation:fadeIn 1s ease;
+
+
+}
+
+
+
+
+@keyframes fadeIn {
+
+
+ from {
+
+ opacity:0;
+
+ transform:translateY(30px);
+
+ }
+
+
+ to {
+
+ opacity:1;
+
+ transform:translateY(0);
+
+ }
+
+
+}
+
+
+
+
+
+
+/* جلوگیری از خراب شدن گوشی */
+
+
+img {
+
+
+ max-width:100%;
+
+
+}
+
+
+
+button,
+a {
+
+
+ cursor:pointer;
+
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+.contact p {
+
+
+ font-size:16px;
+
+
+ padding:18px;
+
+
+}
+
+
+
+.contact-buttons {
+
+
+ flex-direction:column;
+
+
+ align-items:center;
+
+
+}
+
+
+.contact-btn {
+
+
+ width:220px;
+
+
+ text-align:center;
+
+
+}
+
+
+
+}
+/* ===== PRO PROJECT CARDS ===== */
+
+
+.project-card {
+
+ position:relative;
+
+ overflow:hidden;
+
+ background:
+
+ linear-gradient(
+
+ 145deg,
+
+ rgba(255,255,255,.1),
+
+ rgba(255,255,255,.03)
+
+ );
+
+
+ border:1px solid rgba(56,189,248,.35);
+
+
+ box-shadow:
+
+ 0 20px 40px rgba(0,0,0,.25);
+
+
+ transition:.4s;
+
+
+}
+
+
+
+.project-card::before {
+
+
+ content:"";
+
+
+ position:absolute;
+
+
+ top:0;
+
+ left:-100%;
+
+
+ width:100%;
+
+ height:3px;
+
+
+ background:#38bdf8;
+
+
+ transition:.5s;
+
+
+}
+
+
+
+.project-card:hover::before {
+
+
+ left:100%;
+
+
+}
+
+
+
+
+.project-card:hover {
+
+
+ transform:
+
+ translateY(-12px);
+
+
+ box-shadow:
+
+ 0 25px 60px rgba(56,189,248,.25);
+
+
+}
+
+
+
+
+.project-card h3 {
+
+
+ color:white;
+
+ margin-bottom:15px;
+
+
+}
+
+
+
+.project-card p {
+
+
+ color:#cbd5e1;
+
+ line-height:1.8;
+
+
+}
+
+
+
+.project-card span {
+
+
+ display:inline-block;
+
+
+ margin-top:20px;
+
+
+ padding:8px 18px;
+
+
+ border-radius:20px;
+
+
+ background:rgba(56,189,248,.12);
+
+
+ color:#38bdf8;
+
+
+}
+
+
+
+.project-card a {
+
+
+ margin-top:25px;
+
+
+}
+/* ===== PRO SKILL CARDS ===== */
+
+
+.skill-card {
+
+
+ position:relative;
+
+ overflow:hidden;
+
+
+ background:
+
+ linear-gradient(
+
+ 145deg,
+
+ rgba(255,255,255,.12),
+
+ rgba(255,255,255,.03)
+
+ );
+
+
+ border:1px solid rgba(56,189,248,.35);
+
+
+ box-shadow:
+
+ 0 15px 35px rgba(0,0,0,.25);
+
+
+ transition:.4s;
+
+
+}
+
+
+
+.skill-card::before {
+
+
+ content:"";
+
+
+ position:absolute;
+
+
+ width:120%;
+
+ height:3px;
+
+
+ bottom:0;
+
+ left:-120%;
+
+
+ background:#38bdf8;
+
+
+ transition:.5s;
+
+
+}
+
+
+
+.skill-card:hover::before {
+
+
+ left:100%;
+
+
+}
+
+
+
+
+
+.skill-card:hover {
+
+
+ transform:
+
+ translateY(-12px)
+
+ scale(1.05);
+
+
+ border-color:#38bdf8;
+
+
+ box-shadow:
+
+ 0 20px 50px rgba(56,189,248,.25);
+
+
+}
+
+
+
+
+
+.skill-card {
+
+
+ font-weight:bold;
+
+
+ letter-spacing:2px;
+
+
+ color:#e2e8f0;
+
+
+}
+
+
+
+
+.skill-card:hover {
+
+
+ color:white;
+
+
+}
+/* ===== SKILL ICONS ===== */
+
+
+.skill-card{
+
+ display:flex;
+
+ flex-direction:column;
+
+ gap:15px;
+
+ justify-content:center;
+
+ align-items:center;
+
+}
+
+
+
+.skill-icon{
+
+ font-size:45px;
+
+ color:#38bdf8;
+
+ transition:.4s;
+
+}
+
+
+
+.skill-card:hover .skill-icon{
+
+ transform:
+
+ rotate(10deg)
+
+ scale(1.2);
+
+
+ text-shadow:
+
+ 0 0 25px #38bdf8;
+
+}
+/* ===== REAL TECH COLORS ===== */
+
+
+.skill-icon{
+
+ font-size:50px;
+
+ transition:.4s;
+
+}
+
+
+
+.html-icon{
+
+ color:#e34f26;
+
+}
+
+
+
+.css-icon{
+
+ color:#1572b6;
+
+}
+
+
+
+.js-icon{
+
+ color:#f7df1e;
+
+}
+
+
+
+.react-icon{
+
+ color:#61dafb;
+
+}
+
+
+
+.skill-card:hover .skill-icon{
+
+
+ transform:
+
+ scale(1.2)
+
+ rotate(8deg);
+
+
+ filter:
+
+ drop-shadow(0 0 15px currentColor);
+
+
+}
+.call-btn{
+
+ background:#38bdf8;
+
+}
+
+
+.message-btn{
+
+ background:transparent;
+
+ color:#38bdf8;
+
+ border:1px solid #38bdf8;
+
+}
+
+
+.message-btn:hover{
+
+ background:#38bdf8;
+
+ color:#050816;
+
+}
+
+
+
+.hero-btn{
+
+ display:inline-block;
+
+ padding:14px 35px;
+
+ border-radius:30px;
+
+ text-decoration:none;
+
+ font-weight:bold;
+
+ transition:.4s;
+
+ box-shadow:
+
+ 0 10px 30px rgba(56,189,248,.25);
+
+}
+
+
+
+.hero-btn:hover{
+
+ transform:translateY(-6px);
+
+ box-shadow:
+
+ 0 15px 45px rgba(56,189,248,.5);
+
+}
+/* ===== NAVBAR PRO ===== */
+
+
+nav{
+
+ backdrop-filter:blur(15px);
+
+ background:rgba(5,8,22,.65);
+
+ border-bottom:
+
+ 1px solid rgba(56,189,248,.2);
+
+}
+
+
+.nav-logo{
+
+ color:#38bdf8;
+
+ font-size:35px;
+
+ letter-spacing:6px;
+
+ text-shadow:
+
+ 0 0 25px rgba(56,189,248,.7);
+
+ transition:.4s;
+
+}
+
+
+.nav-logo:hover{
+
+ transform:scale(1.1);
+
+}
+
+
+.menu a{
+
+ position:relative;
+
+}
+
+
+.menu a::after{
+
+ content:"";
+
+ position:absolute;
+
+ bottom:-8px;
+
+ left:0;
+
+ width:0;
+
+ height:2px;
+
+ background:#38bdf8;
+
+ transition:.4s;
+
+}
+
+
+.menu a:hover::after{
+
+ width:100%;
+
+}
+
+
+.menu a:hover{
+
+ color:white;
+
+}
+/* ===== CONTACT PRO ===== */
+
+
+.contact-buttons{
+
+ display:flex;
+
+ justify-content:center;
+
+ gap:20px;
+
+ margin-top:30px;
+
+}
+
+
+
+.contact-btn{
+
+
+ padding:14px 40px;
+
+
+ border-radius:35px;
+
+
+ background:#38bdf8;
+
+
+ color:#050816;
+
+
+ text-decoration:none;
+
+
+ font-weight:bold;
+
+
+ transition:.4s;
+
+
+ box-shadow:
+
+ 0 10px 30px rgba(56,189,248,.25);
+
+
+}
+
+
+
+.contact-btn:hover{
+
+
+ transform:translateY(-6px);
+
+
+ box-shadow:
+
+ 0 20px 50px rgba(56,189,248,.5);
+
+
+}
+
+
+
+
+.contact-btn.outline{
+
+
+ background:transparent;
+
+
+ color:#38bdf8;
+
+
+ border:1px solid #38bdf8;
+
+
+}
+
+
+
+.contact-btn.outline:hover{
+
+
+ background:#38bdf8;
+
+
+ color:#050816;
+
+
+}
+/* ===== MOBILE FINAL FIX ===== */
+
+@media(max-width:768px){
+
+
+body{
+  overflow-x:hidden;
+}
+
+
+nav{
+
+  padding:15px 10px;
+
+  gap:25px;
+
+}
+
+
+.nav-logo{
+
+  margin-bottom:10px;
+
+}
+
+
+/* همه متن ها وسط */
+
+.hero,
+.about,
+.skills,
+.projects,
+.contact{
+
+  text-align:center;
+
+  width:100%;
+
+  overflow:hidden;
+
+}
+
+
+/* قهرمان */
+
+.hero h1{
+
+ font-size:30px;
+
+}
+
+
+.hero h2{
+
+ font-size:22px;
+
+}
+
+
+.hero p{
+
+ font-size:15px;
+
+ padding:0 15px;
+
+}
+
+
+
+/* بخش خورشید و سیاره ها */
+
+.hero-content{
+
+ width:220px;
+
+ height:220px;
+
+ margin-bottom:30px;
+
+}
+
+
+
+.logo-box{
+
+ width:95px;
+
+ height:95px;
+
+ font-size:35px;
+
+}
+
+/* دکمه ها */
+
+.hero-buttons{
+
+ flex-direction:column;
+
+ align-items:center;
+
+ gap:15px;
+
+}
+
+
+
+.hero-btn{
+
+ width:220px;
+
+ text-align:center;
+
+}
+
+
+
+/* کارت های پایین */
+
+.skill-list,
+.project-list{
+
+ width:100%;
+
+}
+
+
+
+.skill-card,
+.project-card{
+
+ max-width:90%;
+
+}
+
+
+}
+/* ===== HERO MOBILE FIX 2 ===== */
+
+@media(max-width:768px){
+
+
+nav{
+  height:60px;
+  padding:0 15px;
+
+  display:flex;
+  flex-direction:row;
+
+  justify-content:center;
+  align-items:center;
+
+  gap:20px;
+
+  flex-wrap:nowrap;
+}
+
+.nav-logo{
+
+  font-size:22px;
+
+  letter-spacing:2px;
+
+}
+
+.menu{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+
+  gap:15px;
+
+  flex-wrap:nowrap;
+}
+
+.menu a{
+
+  font-size:15px;
+
+}
+
+
+
+/* Hero جمع تر */
+
+.hero{
+
+ padding-top:170px;
+ min-height:115vh;
+
+}
+
+
+
+.hero-content{
+
+ width:180px;
+ height:180px;
+
+ margin-bottom:90px;
+
+}
+
+
+
+/* خورشید */
+
+.logo-box{
+
+ width:85px;
+
+ height:85px;
+
+ font-size:30px;
+
+}
+
+
+
+/* سیاره ها نزدیک تر */
+
+
+.side-card{
+
+ padding:6px 12px;
+
+ font-size:11px;
+
+}
+
+.hero h1{
+
+ margin-top:10px;
+
+ font-size:28px;
+
+}
+
+
+
+.hero h2{
+
+ font-size:21px;
+
+}
+
+
+
+.hero p{
+
+ margin-top:15px;
+
+}
+
+
+}
+/* ===== MOBILE MENU ===== */
+
+
+.hamburger{
+
+ display:none;
+
+}
+
+
+@media(max-width:768px){
+
+
+nav{
+
+ height:60px;
+
+ justify-content:space-between;
+
+ padding:0 20px;
+
+}
+
+
+
+.hamburger{
+
+ display:flex;
+
+ flex-direction:column;
+
+ gap:5px;
+
+ cursor:pointer;
+
+}
+
+
+
+.hamburger span{
+
+ width:25px;
+
+ height:3px;
+
+ background:#38bdf8;
+
+ border-radius:5px;
+
+}
+
+
+
+.menu{
+
+ display:none;
+
+}
+
+
+.nav-logo{
+
+ font-size:25px;
+
+}
+
+
+
+}
+/* ===== MOBILE DROPDOWN MENU ===== */
+
+
+@media(max-width:768px){
+
+
+
+.menu.active{
+
+
+ display:flex;
+
+
+ position:absolute;
+
+
+ top:60px;
+
+
+ right:0;
+
+
+ width:100%;
+
+
+ flex-direction:column;
+
+
+ align-items:center;
+
+
+ gap:20px;
+
+
+ padding:25px;
+
+
+ background:rgba(5,8,22,.95);
+
+
+ backdrop-filter:blur(15px);
+
+
+ border-bottom:1px solid rgba(56,189,248,.3);
+
+
+ animation:menuShow .3s ease;
+
+
+}
+
+
+
+@keyframes menuShow{
+
+
+from{
+
+ opacity:0;
+
+ transform:translateY(-20px);
+
+}
+
+
+to{
+
+ opacity:1;
+
+ transform:translateY(0);
+
+}
+
+
+}
+
+
+
+}
+/* ===== CLEAN ORBIT ===== */
+
+
+.side-card{
+ animation:orbit 28s linear infinite;
+ will-change: transform;
+}
+
+
+
+.card1{
+
+ animation-delay:0s;
+
+}
+
+
+.card2{
+
+ animation-delay:-7s;
+
+}
+
+
+.card3{
+
+ animation-delay:-14s;
+
+}
+
+
+.card4{
+
+ animation-delay:-21s;
+
+}
+
+
+
+@keyframes orbit{
+
+
+from{
+
+ transform:
+
+ rotate(0deg)
+
+ translateX(95px)
+
+ rotate(0deg);
+
+}
+
+
+
+to{
+
+ transform:
+
+ rotate(360deg)
+
+ translateX(95px)
+
+ rotate(-360deg);
+
+}
+
+}
+section{
+
+ position:relative;
+
+}
+
+
+section::after{
+
+ content:"";
+
+ width:120px;
+
+ height:2px;
+
+ background:#38bdf8;
+
+ opacity:.25;
+
+ margin-top:70px;
+
+ border-radius:10px;
+
+}
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+
+height:250px;
+
+background:#38bdf8;
+
+filter:blur(120px);
+
+opacity:.12;
+
+bottom:0;
+
+z-index:-1;
+
+}
+/* ===== PREMIUM BACKGROUND GLOW ===== */
+
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:500px;
+
+height:500px;
+
+top:-200px;
+
+right:-150px;
+
+background:#38bdf8;
+
+filter:blur(180px);
+
+opacity:.12;
+
+z-index:-1;
+
+animation:glowMove 8s infinite alternate;
+
+}
+
+
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:400px;
+
+height:400px;
+
+bottom:-150px;
+
+left:-100px;
+
+background:#0ea5e9;
+
+filter:blur(160px);
+
+opacity:.1;
+
+z-index:-1;
+
+animation:glowMove 10s infinite alternate-reverse;
+
+}
+
+
+
+@keyframes glowMove{
+
+
+from{
+
+transform:translate(0,0);
+
+}
+
+
+to{
+
+transform:translate(80px,40px);
+
+}
+
+
+}
+/* ===== HERO LIGHT LINE ===== */
+
+
+.hero::after{
+
+content:"";
+
+width:300px;
+
+height:2px;
+
+margin-top:50px;
+
+background:linear-gradient(
+90deg,
+transparent,
+#38bdf8,
+transparent
+);
+
+
+opacity:.5;
+
+
+animation:lineMove 3s infinite;
+
+
+}
+
+
+@keyframes lineMove{
+
+
+0%{
+
+opacity:.2;
+
+transform:scaleX(.5);
+
+}
+
+
+50%{
+
+opacity:1;
+
+transform:scaleX(1);
+
+}
+
+
+100%{
+
+opacity:.2;
+
+transform:scaleX(.5);
+
+}
+
+
+}
+/* ===== PREMIUM ABOUT CARD ===== */
+
+
+.about-card{
+
+
+max-width:750px;
+
+margin-top: 40px;
+
+padding:30px 35px;
+
+
+background:
+
+
+linear-gradient(
+
+145deg,
+
+rgba(255,255,255,.12),
+
+rgba(255,255,255,.04)
+
+);
+
+
+
+border:1px solid rgba(56,189,248,.35);
+
+
+border-radius:35px;
+
+
+backdrop-filter:blur(15px);
+
+
+
+box-shadow:
+
+
+0 25px 60px rgba(0,0,0,.3);
+
+
+
+position:relative;
+
+
+overflow:hidden;
+
+
+transition:.4s;
+
+
+}
+
+.about-card::after{
+
+
+content:"";
+
+
+position:absolute;
+
+
+bottom:0;
+
+
+left:-100%;
+
+
+width:100%;
+
+
+height:3px;
+
+
+background:#38bdf8;
+
+
+transition:.5s;
+
+
+}
+
+
+.about-card:hover::after{
+
+
+left:100%;
+
+
+}
+
+.about-card:hover::before{
+
+
+left:100%;
+
+
+}
+
+
+
+.about-card:hover{
+
+
+transform:translateY(-8px);
+
+
+box-shadow:
+
+
+0 35px 80px rgba(56,189,248,.18);
+
+
+}
+
+
+
+.about-card p{
+
+
+color:#cbd5e1;
+
+
+font-size:18px;
+
+
+line-height:1.9;
+
+
+text-align:center;
+
+
+}
+/* ===== PREMIUM SKILLS ===== */
+
+
+.skill-card{
+
+
+position:relative;
+
+
+width:220px;
+
+
+height:150px;
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+justify-content:center;
+
+
+align-items:center;
+
+
+gap:15px;
+
+
+
+background:
+
+
+linear-gradient(
+
+145deg,
+
+rgba(255,255,255,.12),
+
+rgba(255,255,255,.03)
+
+);
+
+
+
+border:1px solid rgba(56,189,248,.25);
+
+
+border-radius:35px;
+
+
+backdrop-filter:blur(15px);
+
+
+
+transition:.4s;
+
+
+overflow:hidden;
+
+
+}
+
+
+
+.skill-card::before{
+
+
+content:"";
+
+
+position:absolute;
+
+
+top:0;
+
+
+left:-100%;
+
+
+width:100%;
+
+
+height:3px;
+
+
+background:#38bdf8;
+
+
+transition:.5s;
+
+
+}
+
+
+
+.skill-card:hover::before{
+
+
+left:100%;
+
+
+}
+
+
+
+
+.skill-card:hover{
+
+
+transform:translateY(-12px);
+
+
+box-shadow:
+
+
+0 25px 60px rgba(56,189,248,.25);
+
+
+border-color:#38bdf8;
+
+
+}
+
+
+
+
+
+
+.skill-icon{
+
+
+font-size:65px;
+
+
+transition:.4s;
+
+
+}
+
+
+
+.skill-card:hover .skill-icon{
+
+
+transform:
+
+scale(1.15)
+
+rotate(8deg);
+
+
+filter:
+
+drop-shadow(0 0 18px currentColor);
+
+
+}
+
+
+
+
+
+.skill-card span{
+
+
+font-size:22px;
+
+
+font-weight:bold;
+
+
+color:#e2e8f0;
+
+
+}
+/* ===== PREMIUM PROJECTS ===== */
+
+
+.project-card{
+
+
+position:relative;
+
+
+width:330px;
+
+
+padding:25px;
+
+
+border-radius:35px;
+
+
+background:
+
+
+linear-gradient(
+
+145deg,
+
+rgba(255,255,255,.12),
+
+rgba(255,255,255,.03)
+
+);
+
+
+
+border:1px solid rgba(56,189,248,.25);
+
+
+backdrop-filter:blur(15px);
+
+
+overflow:hidden;
+
+
+transition:.4s;
+
+
+}
+
+
+
+.project-card:hover{
+
+
+transform:
+
+translateY(-12px);
+
+
+box-shadow:
+
+0 30px 70px rgba(56,189,248,.25);
+
+
+border-color:#38bdf8;
+
+
+}
+
+
+
+
+
+
+.project-image{
+
+
+height:140px;
+
+
+border-radius:25px;
+
+
+display:flex;
+
+
+justify-content:center;
+
+
+align-items:center;
+
+
+margin-bottom:25px;
+
+
+
+background:
+
+
+radial-gradient(
+
+circle,
+
+rgba(56,189,248,.35),
+
+rgba(5,8,22,.8)
+
+);
+
+
+
+color:#38bdf8;
+
+
+font-size:28px;
+
+
+font-weight:bold;
+
+
+}
+
+
+
+.project-card h3{
+
+
+font-size:25px;
+
+
+}
+
+
+
+.project-card p{
+
+
+color:#cbd5e1;
+
+
+line-height:2;
+
+
+margin-top:15px;
+
+
+}
+
+
+
+.project-card span{
+
+
+display:inline-block;
+
+
+margin-top:20px;
+
+
+padding:8px 18px;
+
+
+border-radius:20px;
+
+
+background:rgba(56,189,248,.12);
+
+
+color:#38bdf8;
+
+
+}
+
+
+
+.project-card a{
+
+
+display:block;
+
+
+margin-top:25px;
+
+
+padding:12px;
+
+
+border-radius:30px;
+
+
+text-align:center;
+
+
+background:#38bdf8;
+
+
+color:#050816;
+
+
+font-weight:bold;
+
+
+text-decoration:none;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.project-card a:hover{
+
+
+transform:scale(1.05);
+
+
+}
+.project-image{
+
+overflow:hidden;
+
+}
+
+
+.project-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+border-radius:25px;
+
+transition:.5s;
+
+}
+
+
+
+.project-card:hover .project-image img{
+
+transform:scale(1.08);
+
+}
+/* ===== PREMIUM FOOTER ===== */
+
+
+.footer{
+
+
+width:100%;
+
+
+padding:45px 20px;
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+align-items:center;
+
+
+gap:15px;
+
+
+
+border-top:
+
+
+1px solid rgba(56,189,248,.2);
+
+
+background:
+
+
+rgba(255,255,255,.03);
+
+
+
+backdrop-filter:blur(15px);
+
+
+}
+
+
+
+
+.footer-logo{
+
+
+width:65px;
+
+
+height:65px;
+
+
+border-radius:50%;
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+
+background:
+
+
+radial-gradient(circle,#38bdf8,rgba(56,189,248,.2));
+
+
+color:#050816;
+
+
+font-size:25px;
+
+
+font-weight:bold;
+
+
+box-shadow:
+
+
+0 0 30px rgba(56,189,248,.5);
+
+
+}
+
+
+
+.footer p{
+
+
+color:#cbd5e1;
+
+
+font-size:16px;
+
+
+}
+
+
+
+
+.footer span{
+
+
+color:#38bdf8;
+
+
+font-size:15px;
+
+
+}
+/* ===== FINAL POLISH ===== */
+
+
+/* Footer */
+
+.footer{
+
+margin:0 15px;
+
+border-radius:35px 35px 0 0;
+
+min-height:220px;
+
+justify-content:center;
+
+}
+
+
+
+/* Navbar گردتر */
+
+nav{
+
+border-radius:0 0 30px 30px;
+
+margin:0 10px;
+
+width:calc(100% - 20px);
+
+}
+
+
+
+
+/* خورشید بزرگ‌تر */
+
+.logo-box{
+
+width:150px;
+
+height:150px;
+
+}
+
+
+
+.logo-box span{
+
+font-size:55px;
+
+}
+
+
+
+/* کارت های مدار */
+
+.side-card{
+
+width:70px;
+
+height:35px;
+
+font-size:10px;
+
+}
+
+
+
+/* نزدیک‌تر به لوگو */
+
+@keyframes orbit1 {
+
+from {
+
+transform:
+
+rotate(0deg)
+
+translateX(170px)
+
+rotate(0deg);
+
+}
+
+to {
+
+transform:
+
+rotate(360deg)
+
+translateX(170px)
+
+rotate(-360deg);
+
+}
+
+}
+
+
+@keyframes orbit2 {
+
+from {
+
+transform:
+
+rotate(90deg)
+
+translateX(170px)
+
+rotate(-90deg);
+
+}
+
+to {
+
+transform:
+
+rotate(450deg)
+
+translateX(170px)
+
+rotate(-450deg);
+
+}
+
+}
+
+
+@keyframes orbit3 {
+
+from {
+
+transform:
+
+rotate(180deg)
+
+translateX(170px)
+
+rotate(-180deg);
+
+}
+
+to {
+
+transform:
+
+rotate(540deg)
+
+translateX(170px)
+
+rotate(-540deg);
+
+}
+
+}
+
+
+@keyframes orbit4 {
+
+from {
+
+transform:
+
+rotate(270deg)
+
+translateX(170px)
+
+rotate(-270deg);
+
+}
+
+to {
+
+transform:
+
+rotate(630deg)
+
+translateX(170px)
+
+rotate(-630deg);
+
+}
+
+}
+/* ===== FINAL CLEAN ALIGN ===== */
+
+
+/* FOOTER CENTER FIX */
+
+.footer{
+
+margin-left:0;
+
+margin-right:0;
+
+width:100%;
+
+border-radius:35px 35px 0 0;
+
+}
+
+
+
+/* HERO کمی بالاتر */
+
+.hero{
+
+padding-top:120px;
+
+}
+
+
+
+
+/* خورشید تنظیم */
+
+.logo-box{
+
+width:125px;
+
+height:125px;
+
+}
+
+
+
+.logo-box span{
+
+font-size:48px;
+
+}
+
+
+
+
+/* کارت های مدار */
+
+.side-card{
+
+width:75px;
+
+height:50px;
+
+font-size:11.4px;
+
+}
+
+
+
+
+/* مدار نزدیک و مرتب */
+
+@keyframes orbit1 {
+
+from{
+
+transform:
+
+rotate(0deg)
+
+translateX(155px)
+
+rotate(0deg);
+
+}
+
+
+to{
+
+transform:
+
+rotate(360deg)
+
+translateX(155px)
+
+rotate(-360deg);
+
+}
+
+}
+
+
+@keyframes orbit2 {
+
+from{
+
+transform:
+
+rotate(90deg)
+
+translateX(155px)
+
+rotate(-90deg);
+
+}
+
+
+to{
+
+transform:
+
+rotate(450deg)
+
+translateX(155px)
+
+rotate(-450deg);
+
+}
+
+}
+
+
+@keyframes orbit3 {
+
+from{
+
+transform:
+
+rotate(180deg)
+
+translateX(155px)
+
+rotate(-180deg);
+
+}
+
+
+to{
+
+transform:
+
+rotate(540deg)
+
+translateX(155px)
+
+rotate(-540deg);
+
+}
+
+}
+
+
+@keyframes orbit4 {
+
+from{
+
+transform:
+
+rotate(270deg)
+
+translateX(155px)
+
+rotate(-270deg);
+
+}
+
+
+to{
+
+transform:
+
+rotate(630deg)
+
+translateX(155px)
+
+rotate(-630deg);
+
+}
+
+}
+
+
+
+/* فونت جذاب */
+
+body{
+
+font-family:
+
+'Segoe UI',
+
+Tahoma,
+
+sans-serif;
+
+}
+
+
+
+h1,h2,h3{
+
+letter-spacing:.5px;
+
+font-weight:700;
+
+}
+/* فاصله بیشتر مدار */
+
+@keyframes orbit1 {
+
+from{
+
+transform:
+rotate(0deg)
+translateX(200px)
+rotate(0deg);
+
+}
+
+to{
+
+transform:
+rotate(360deg)
+translateX(200px)
+rotate(-360deg);
+
+}
+
+}
+
+
+@keyframes orbit2 {
+
+from{
+
+transform:
+rotate(90deg)
+translateX(200px)
+rotate(-90deg);
+
+}
+
+to{
+
+transform:
+rotate(450deg)
+translateX(200px)
+rotate(-450deg);
+
+}
+
+}
+
+
+@keyframes orbit3 {
+
+from{
+
+transform:
+rotate(180deg)
+translateX(200px)
+rotate(-180deg);
+
+}
+
+to{
+
+transform:
+rotate(540deg)
+translateX(200px)
+rotate(-540deg);
+
+}
+
+}
+
+
+@keyframes orbit4 {
+
+from{
+
+transform:
+rotate(270deg)
+translateX(200px)
+rotate(-270deg);
+
+}
+
+to{
+
+transform:
+rotate(630deg)
+translateX(200px)
+rotate(-630deg);
+
+}
+
+}
+
+
+
+/* همه چیز وسط */
+
+.hero,
+.about,
+.skills,
+.projects,
+.contact,
+.footer{
+
+text-align:center;
+
+}
+
+
+
+.skill-list,
+.project-list,
+.hero-buttons,
+.contact-buttons{
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+
+
+section{
+
+width:100%;
+
+overflow:hidden;
+
+}
+/* ===== PROJECT SLIDER ===== */
+
+
+.project-image{
+
+position:relative;
+
+height:180px;
+
+overflow:hidden;
+
+border-radius:25px;
+
+margin-bottom:25px;
+
+}
+
+
+
+.project-image img{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+opacity:0;
+
+animation:slideShow 9s infinite;
+
+}
+
+
+
+.project-image img:nth-child(1){
+
+animation-delay:0s;
+
+}
+
+
+.project-image img:nth-child(2){
+
+animation-delay:3s;
+
+}
+
+
+.project-image img:nth-child(3){
+
+animation-delay:6s;
+
+}
+
+
+
+@keyframes slideShow{
+
+
+0%{
+
+opacity:0;
+
+transform:scale(1);
+
+}
+
+
+10%{
+
+opacity:1;
+
+}
+
+
+30%{
+
+opacity:1;
+
+transform:scale(1.05);
+
+}
+
+
+40%{
+
+opacity:0;
+
+}
+
+
+100%{
+
+opacity:0;
+
+}
+
+}
+/* ===== PREMIUM SCROLL EFFECT ===== */
+
+
+section{
+
+animation:sectionShow .8s ease both;
+
+}
+
+
+@keyframes sectionShow{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+/* کارت ها نرم تر */
+
+
+.skill-card,
+.project-card,
+.contact-btn{
+
+transition:
+
+transform .4s ease,
+
+box-shadow .4s ease,
+
+border .4s ease;
+
+}
+
+
+
+.skill-card:hover,
+.project-card:hover{
+
+
+transform:translateY(-12px) scale(1.02);
+
+
+box-shadow:
+
+0 25px 60px rgba(56,189,248,.25);
+
+
+}
+body::before{
+
+
+content:"";
+
+position:fixed;
+
+top:-200px;
+
+left:50%;
+
+width:500px;
+
+height:500px;
+
+background:#38bdf8;
+
+filter:blur(120px);
+
+opacity:.12;
+
+transform:translateX(-50%);
+
+z-index:-1;
+
+
+}
+/* ===== FINAL HERO POLISH ===== */
+
+
+/* لوگوی وسط */
+
+.logo-box{
+
+animation:
+
+pulse 5s infinite;
+
+}
+
+
+@keyframes glowMove{
+
+
+from{
+
+box-shadow:
+
+0 0 35px #38bdf8;
+
+}
+
+
+to{
+
+box-shadow:
+
+0 0 70px rgba(56,189,248,.9);
+
+}
+
+
+}
+
+
+
+/* کارت های دور لوگو */
+
+
+.side-card{
+
+
+background:
+
+linear-gradient(
+
+145deg,
+
+rgba(255,255,255,.18),
+
+rgba(255,255,255,.05)
+
+);
+
+
+
+box-shadow:
+
+0 10px 30px rgba(56,189,248,.15);
+
+
+
+transition:.4s;
+
+
+}
+
+
+
+.side-card:hover{
+
+
+scale:1.1;
+
+
+border-color:#38bdf8;
+
+
+box-shadow:
+
+0 0 30px rgba(56,189,248,.5);
+
+
+}
+
+
+
+
+
+/* دکمه ها */
+
+
+.hero-btn{
+
+
+position:relative;
+
+overflow:hidden;
+
+
+}
+
+
+
+.hero-btn::before{
+
+
+content:"";
+
+
+position:absolute;
+
+
+top:0;
+
+
+left:-120%;
+
+
+width:100%;
+
+
+height:100%;
+
+
+background:
+
+linear-gradient(
+
+120deg,
+
+transparent,
+
+rgba(255,255,255,.4),
+
+transparent
+
+);
+
+
+transition:.6s;
+
+
+}
+
+
+
+.hero-btn:hover::before{
+
+
+left:120%;
+
+
+}
+
+
+
+
+/* منو */
+
+
+.menu a{
+
+
+transition:.4s;
+
+}
+
+
+.menu a:hover{
+
+
+color:#38bdf8;
+
+
+text-shadow:
+
+0 0 15px #38bdf8;
+
+
+}
+/* Performance Optimization */
+@media (max-width: 768px) {
+  .hero *,
+  .hero-logo,
+  .hero-card,
+  .orbit,
+  .orbit-card {
+    animation-duration: 25s !important;
+  }
+}
+/* Final mobile performance */
+
+@media(max-width:768px){
+
+  .side-card{
+    animation-duration:35s !important;
+  }
+
+
+  .logo-box{
+    animation-duration:6s !important;
+  }
+
+
+  body::before,
+  body::after{
+    animation:none !important;
+    filter:blur(100px);
+  }
+
+
+  .project-card,
+  .skill-card,
+  .about-card{
+    backdrop-filter:blur(8px);
+  }
+
+}
